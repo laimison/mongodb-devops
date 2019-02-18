@@ -68,4 +68,5 @@ Vagrant.configure("2") do |config|
   #   apt-get install -y apache2
   # SHELL
   config.vm.define :mongodb
+  config.vm.hostname = "mongodb"
 end
