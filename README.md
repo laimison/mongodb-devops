@@ -12,7 +12,7 @@ vagrant ssh
 ### Steps on Centos virtual box
 
 ```
-yum install git -y
+sudo yum install git -y
 git clone https://github.com/laimison/mongodb-devops.git
 cd mongodb-devops
 alias pull='git pull origin master'
