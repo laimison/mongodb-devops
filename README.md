@@ -33,6 +33,7 @@ mongo < list_users.js
 mongo < create_admin.js
 mongo < list_users.js
 mongo -u mongoadmin -p mongoadmin
+mongo < admin_user_exists.js
 ```
 
 Consider [different roles](https://docs.mongodb.com/manual/reference/built-in-roles/#root)
