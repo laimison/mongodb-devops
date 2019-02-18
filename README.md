@@ -9,7 +9,7 @@ vagrant up
 vagrant ssh
 ```
 
-### Setup Centos virtual box
+### Steps on Centos virtual box
 
 ```
 yum install git -y
@@ -17,4 +17,20 @@ git clone https://github.com/laimison/mongodb-devops.git
 cd mongodb-devops
 alias pull='git pull origin master'
 pull
+
+sudo cp mongodb-org-4.0.repo /etc/yum.repos.d/
+sudo yum install -y mongodb-org-4.0.6
+sudo setenforce 0
+sudo service mongod start
+mongo
+```
+
+Create admin user
+
+```
+echo 
+
+db.getUsers()
+
+
 ```
