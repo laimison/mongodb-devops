@@ -28,10 +28,11 @@ mongo
 Create admin user
 
 ```
-mongo --quiet --eval  "printjson(db.adminCommand('listDatabases'))"
-
-showdbs
-db.getUsers()
-
-
+mongo < delete_admin.js
+mongo < list_users.js
+mongo < create_admin.js
+mongo < list_users.js
 ```
+
+Consider (different roles)[https://docs.mongodb.com/manual/reference/built-in-roles/#root]
+For super user, use 'root'
