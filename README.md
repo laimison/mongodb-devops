@@ -39,3 +39,5 @@ mongo < admin_user_exists.js
 Consider [different roles](https://docs.mongodb.com/manual/reference/built-in-roles/#root)
 
 For super user, use 'root'
+
+To disable [anonymous authentication](https://stackoverflow.com/questions/22647842/disable-anonymous-access-to-mongodb)
