@@ -28,8 +28,9 @@ mongo
 Create admin user
 
 ```
-echo 
+mongo --quiet --eval  "printjson(db.adminCommand('listDatabases'))"
 
+showdbs
 db.getUsers()
 
 
