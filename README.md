@@ -34,5 +34,6 @@ mongo < create_admin.js
 mongo < list_users.js
 ```
 
-Consider (different roles)[https://docs.mongodb.com/manual/reference/built-in-roles/#root]
+Consider [different roles](https://docs.mongodb.com/manual/reference/built-in-roles/#root)
+
 For super user, use 'root'
