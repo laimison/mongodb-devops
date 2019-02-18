@@ -32,6 +32,7 @@ mongo < delete_admin.js
 mongo < list_users.js
 mongo < create_admin.js
 mongo < list_users.js
+mongo -u mongoadmin -p mongoadmin
 ```
 
 Consider [different roles](https://docs.mongodb.com/manual/reference/built-in-roles/#root)
