@@ -23,6 +23,18 @@ sudo yum install -y mongodb-org-4.0.6
 sudo setenforce 0
 sudo service mongod start
 mongo
+
+sudo mkdir -p /data/1/log /data/2/log /data/3/log
+sudo mkdir -p /data/1/db /data/2/db /data/3/db
+sudo mkdir -p /data/1/config /data/2/config /data/3/config
+sudo mkdir -p /data/1/pid /data/2/pid /data/3/pid
+
+sudo cp mongod-1.conf /data/1/config/mongod.conf
+sudo cp mongod-2.conf /data/2/config/mongod.conf
+sudo cp mongod-3.conf /data/3/config/mongod.conf
+
+mongod -f /data/1/config/mongod.conf --replSet myset --install --serviceName db27000
+
 ```
 
 Create admin user
